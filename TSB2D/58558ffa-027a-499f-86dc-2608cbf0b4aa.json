@@ -513,6 +513,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 429,
+          "layer": "",
+          "name": "HealthBar",
+          "persistentUuid": "9233bbcf-04b2-4310-b487-9916d07d1922",
+          "width": 322,
+          "x": 962,
+          "y": -81,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1736,6 +1752,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
