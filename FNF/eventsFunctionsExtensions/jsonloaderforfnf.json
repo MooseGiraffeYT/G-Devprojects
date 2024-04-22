@@ -1,0 +1,51 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "FnFJSONLoader",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "JsonLoaderForFNF",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "Go to the resources tab then scan for JSON files, then use this extension to load the filename only (exclude the file path)",
+  "tags": [],
+  "authorIds": [
+    "rotBq28wITdtfsrE7McHQri4k2w2"
+  ],
+  "dependencies": [],
+  "eventsFunctions": [
+    {
+      "description": "Loads a JSON resource into a scene structure variable.",
+      "fullName": "Load a JSON resource in a scene variable",
+      "functionType": "Action",
+      "name": "LoadJSONToScene",
+      "sentence": "Load _PARAM1_ into scene variable _PARAM2_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext\n    .getArgument(\"Variable\")\n    .fromJSObject(\n        runtimeScene\n            .getGame()\n            .getJsonManager()\n            .getLoadedJson(eventsFunctionContext.getArgument(\"Resource\"))\n    );\n",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "parameters": [
+        {
+          "description": "The resource to load the JSON from",
+          "name": "Resource",
+          "type": "jsonResource"
+        },
+        {
+          "description": "The scene variable to load the JSON to",
+          "name": "Variable",
+          "type": "scenevar"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
